@@ -1,5 +1,5 @@
 services:
-  # 1. React / Vite Frontend (Static Site with global CDN & HTTPS)
+  # 1. React / Vite Frontend (Static Site with global CDN & HTTPS - 100% Free)
   - type: web
     name: silent-alarm-client
     runtime: static
@@ -22,10 +22,11 @@ services:
           name: silent-alarm-api
           property: host
 
-  # 2. Node.js Backend API + Socket.IO (Persistent Web Service)
+  # 2. Node.js Backend API + Socket.IO (Persistent Web Service - Free Tier)
   - type: web
     name: silent-alarm-api
     runtime: node
+    plan: free
     rootDir: server
     buildCommand: npm install
     startCommand: npm start
@@ -48,10 +49,11 @@ services:
           name: silent-alarm-ml
           property: host
 
-  # 3. Python ML Microservice (FastAPI + PyTorch Isolation Forest / LSTM)
+  # 3. Python ML Microservice (FastAPI - Free Tier)
   - type: web
     name: silent-alarm-ml
     runtime: python
+    plan: free
     rootDir: ml-service
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
