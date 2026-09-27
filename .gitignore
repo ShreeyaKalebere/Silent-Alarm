@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json
+
+# Environment and sensitive keys
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+
+# Build output
+dist/
+build/
+client/dist/
+
+# Python / ML artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Local SQLite databases / test artifacts
+*.db
+*.sqlite
+*.sqlite3
+ml-service/baselines.db
+
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

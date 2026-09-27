@@ -1,0 +1,15 @@
+{
+  "name": "silent-alarm",
+  "version": "1.0.0",
+  "description": "Silent Alarm - MERN Real-Time Chat Foundation",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "ml": "python ml-service/main.py",
+    "seed": "node server/src/scripts/seedDemoData.js",
+    "test:verify": "node server/test_verification.js",
+    "test:e2e": "node server/test_e2e_realtime.js",
+    "test:ml": "python ml-service/test_ml_service.py",
+    "test:privacy": "node server/test_typing_event_api.js"
+  }
+}
